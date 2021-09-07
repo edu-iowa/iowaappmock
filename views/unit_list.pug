@@ -1,0 +1,11 @@
+extends layout 
+block content 
+    h1= title 
+    h2= level.name
+
+    h3= 'Units:' 
+
+    ul 
+        each unit in level_units
+            li 
+            a(href=unit.url) #{unit.name}

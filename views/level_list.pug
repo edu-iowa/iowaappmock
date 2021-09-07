@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+    h1= title 
+
+    ul 
+        each level in level_list 
+            li 
+            a(href=level.url) #{level.name}
+    
